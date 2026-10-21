@@ -364,20 +364,21 @@ const styles = `
     .nav__hamburger { display: flex !important; }
     .hero { padding: 6rem 1.5rem 4rem; }
     .section { padding: 4rem 1.5rem; }
-    .services-grid { grid-template-columns: 1fr; }
-    .about-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .services-grid { grid-template-columns: minmax(0, 1fr); }
+    .about-grid { grid-template-columns: minmax(0, 1fr); gap: 3rem; }
     .about-img-badge { right: 0; }
-    .team-grid { grid-template-columns: repeat(2, 1fr); }
-    .gallery-grid { grid-template-columns: 1fr 1fr; }
+    .team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .gallery-item--wide { grid-column: span 1; }
     .gallery-item--tall { grid-row: span 1; }
-    .testi-grid { grid-template-columns: 1fr; }
-    .booking-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-    .footer__grid { grid-template-columns: 1fr 1fr; }
+    .testi-grid { grid-template-columns: minmax(0, 1fr); }
+    .booking-grid { grid-template-columns: minmax(0, 1fr); gap: 2.5rem; }
+    .footer__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .footer { padding: 3rem 1.5rem 1.5rem; }
+    .footer a { overflow-wrap: anywhere; }
     .footer__bottom { flex-direction: column; }
-    .form-row { grid-template-columns: 1fr; }
-    .about-values { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: minmax(0, 1fr); }
+    .about-values { grid-template-columns: minmax(0, 1fr); }
   }
 `;
 
